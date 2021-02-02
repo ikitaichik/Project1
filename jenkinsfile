@@ -12,7 +12,7 @@ pipeline {
         stage('run rest app server ') {
             steps {
                 script {
-                    sh 'python3.9 -m pip install --upgrade pip'
+                    sh 'print(sys.version); print(sys.executable); print(os.environ["PATH"]); print(os.environ["PYTHONPATH"]); print(os.getcwd()'
                     sh 'nohup python web_app.py &'
 
                 }
