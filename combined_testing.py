@@ -34,4 +34,4 @@ elif args.test == "frontend":
     if "Itzik" == frontend_testing.frontend_test(1):
         print("Test succeeded")
     else:
-        raise Exception
+        print("Test Failed")
