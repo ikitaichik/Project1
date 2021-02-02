@@ -36,7 +36,7 @@ pipeline {
         stage('run frontend testing') {
             steps {
                 script {
-                    sh 'python frontend_testing.py'
+                    sh 'python3.9 frontend_testing.py'
 
                 }
             }
@@ -56,6 +56,14 @@ pipeline {
 
                 }
             }
-        }
+        }      
     }
+     post {  
+         success {  
+             echo 'successful test'  
+         }  
+         failure {  
+             echo 'body: "<br>Project: {job} <br>Build Number: {buildNumb} <br> build URL: {URL}", charset: \'UTF-8\', from: \'\', mimeType: \'text/html\', replyTo: \'\', subject: "ERROR on jenkins build: {job}", to: "ikitaichik@liveperson.com";'  
+         }  
+     }  
 }
