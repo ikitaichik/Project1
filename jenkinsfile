@@ -13,7 +13,7 @@ pipeline {
             steps {
                 script {
                     sh 'pip install --upgrade pip'
-                    sh 'sudo python3.9 -m pip selenium'
+                    sh 'sudo -H pip install selenium'
                     sh 'nohup python web_app.py &'
 
                 }
