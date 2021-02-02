@@ -12,7 +12,7 @@ pipeline {
         stage('run rest app server ') {
             steps {
                 script {
-                    sh 'python3.9 -m pip install flask'
+                    sh 'python3.9 -m pip install --upgrade pip'
                     sh 'nohup python web_app.py &'
 
                 }
