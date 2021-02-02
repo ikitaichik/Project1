@@ -20,7 +20,7 @@ pipeline {
         stage('run web app server') {
             steps {
                 script {
-                    sh 'nohup python3.9 rest_app.py &'
+                    sh 'nohup python3 rest_app.py &'
 
                 }
             }
