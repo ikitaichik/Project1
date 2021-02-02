@@ -9,5 +9,5 @@ except Exception as e:
     print(e)
     Message = "Couldn't shutdown servers"
 finally:
-    print(Message)
+    print(Message + poo)
 
