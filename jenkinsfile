@@ -36,7 +36,7 @@ pipeline {
         stage('run frontend testing') {
             steps {
                 script {
-                    sh 'python3.9 combined_testing.py --test frontend'
+                    sh 'python3 combined_testing.py --test frontend'
 
                 }
             }
@@ -52,7 +52,7 @@ pipeline {
         stage('run clean environment ') {
             steps {
                 script {
-                    sh ' python clean_environment.py'
+                    sh ' python3 clean_environment.py'
 
                 }
             }
