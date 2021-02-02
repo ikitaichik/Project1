@@ -33,6 +33,11 @@ def delete(id):
         print("Error")
 
 
+if __name__ == '__main__':
+    post(3, "Posted user1")
+    get(3)
+    delete(3)
+
 
 
 

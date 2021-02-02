@@ -12,3 +12,10 @@ def frontend_test(id):
     finally:
         time.sleep(2)
         driver.quit()
+
+
+if __name__ == '__main__':
+    if "Itzik" == frontend_test(1):
+        print("Test succeeded")
+    else:
+        print("Test Failed")

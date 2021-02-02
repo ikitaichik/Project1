@@ -2,9 +2,9 @@ import backend_testing
 import frontend_testing
 import db_connector
 import argparse
-parser = argparse.ArgumentParser()
-parser.add_argument("--test", default="combined", help="Which test to run")
-args = parser.parse_args()
+# parser = argparse.ArgumentParser()
+# parser.add_argument("--test", default="combined", help="Which test to run")
+# args = parser.parse_args()
 
 
 def combined_test(id, name):
@@ -24,14 +24,18 @@ def combined_test(id, name):
         print("Test failed")
 
 
-if args.test == "combined":
+if __name__ == '__main__':
     combined_test(3, "Posted user1")
-elif args.test == "backend":
-    backend_testing.post(3, "Posted user1")
-    id = db_connector.get_ids()
-    backend_testing.get(id)
-elif args.test == "frontend":
-    if "Itzik" == frontend_testing.frontend_test(1):
-        print("Test succeeded")
-    else:
-        print("Test Failed")
+
+# if args.test == "combined":
+#     combined_test(3, "Posted user1")
+# elif args.test == "backend":
+#     backend_testing.post(3, "Posted user1")
+#     id = db_connector.get_ids()
+#     backend_testing.get(id)
+#     db_connector.delete_user(3)
+# elif args.test == "frontend":
+#     if "Itzik" == frontend_testing.frontend_test(1):
+#         print("Test succeeded")
+#     else:
+#         print("Test Failed")
