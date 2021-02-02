@@ -12,11 +12,7 @@ pipeline {
         stage('run rest app server ') {
             steps {
                 script {
-                    sh 'print(sys.version)'
-                    sh 'print(sys.executable)'
-                    sh 'print(os.environ["PATH"])'
-                    sh 'print(os.environ["PYTHONPATH"])'
-                    sh 'print(os.getcwd()'
+                    sh 'python3.9 -m pip install flask'
                     sh 'nohup python web_app.py &'
 
                 }
