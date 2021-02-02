@@ -12,9 +12,6 @@ pipeline {
         stage('run rest app server ') {
             steps {
                 script {
-                    sh 'sudo python3.9 -m pip install flask'
-                    sh 'sudo python3.9 -m pip install pymysql'
-                    sh 'sudo python3.9 -m pip configparser'
                     sh 'sudo python3.9 -m pip selenium'
                     sh 'nohup python web_app.py &'
 
