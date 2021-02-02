@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd0541cb-8814-4393-a87d-71d1e7a7a106" name="Default Changelist" comment="Updated #2 - try/except on clean_environment.py" />
+    <list default="true" id="fd0541cb-8814-4393-a87d-71d1e7a7a106" name="Default Changelist" comment="Updated #2 - try/except on clean_environment.py">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/combined_testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/combined_testing.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,9 +42,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.clean_environment">
+  <component name="RunManager" selected="Python.combined_testing">
     <configuration name="clean_environment" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -176,10 +179,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.clean_environment" />
+        <item itemvalue="Python.combined_testing" />
         <item itemvalue="Python.rest_app" />
         <item itemvalue="Python.web_app" />
-        <item itemvalue="Python.combined_testing" />
+        <item itemvalue="Python.clean_environment" />
         <item itemvalue="Python.main (1)" />
       </list>
     </recent_temporary>
@@ -194,7 +197,7 @@
       <updated>1610877681658</updated>
       <workItem from="1610877696159" duration="11000" />
       <workItem from="1611420095268" duration="8199000" />
-      <workItem from="1611486384699" duration="15058000" />
+      <workItem from="1611486384699" duration="17425000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Jenkinsfile and updating server_stop">
       <created>1612266194794</created>
@@ -217,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612273298152</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Updated #2 - try/except on clean_environment.py">
+      <created>1612273668049</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1612273668049</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,10 +273,10 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pythonProject2$web_app.coverage" NAME="web_app Coverage Results" MODIFIED="1612270067918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProject2$web_app.coverage" NAME="web_app Coverage Results" MODIFIED="1612277678457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject2$clean_environment.coverage" NAME="clean_environment Coverage Results" MODIFIED="1612270889512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pythonProject2$combined_testing.coverage" NAME="combined_testing Coverage Results" MODIFIED="1612265369877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pythonProject2$rest_app.coverage" NAME="rest_app Coverage Results" MODIFIED="1612270882474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProject2$rest_app.coverage" NAME="rest_app Coverage Results" MODIFIED="1612277680769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProject2$combined_testing.coverage" NAME="combined_testing Coverage Results" MODIFIED="1612278569641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject2$test.coverage" NAME="test Coverage Results" MODIFIED="1611592162363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../pythonProject3" />
     <SUITE FILE_PATH="coverage/pythonProject2$backend_testing.coverage" NAME="backend_testing Coverage Results" MODIFIED="1611483217414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject2$db_connector.coverage" NAME="db_connector Coverage Results" MODIFIED="1611487874170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
