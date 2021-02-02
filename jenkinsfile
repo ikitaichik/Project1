@@ -12,7 +12,7 @@ pipeline {
         stage('run rest app server ') {
             steps {
                 script {
-                    sh 'nohup python web_app.py &'
+                    sh 'nohup python3 web_app.py &'
 
                 }
             }
@@ -20,7 +20,7 @@ pipeline {
         stage('run web app server') {
             steps {
                 script {
-                    sh 'nohup python rest_app.py &'
+                    sh 'nohup python3 rest_app.py &'
 
                 }
             }
@@ -28,7 +28,7 @@ pipeline {
         stage('run backend testing') {
             steps {
                 script {
-                    sh 'python backend_testing.py'
+                    sh 'python3 combined_testing.py --test backend'
 
                 }
             }
@@ -36,7 +36,7 @@ pipeline {
         stage('run frontend testing') {
             steps {
                 script {
-                    sh 'python3.9 frontend_testing.py'
+                    sh 'python3.9 combined_testing.py --test frontend'
 
                 }
             }
@@ -44,7 +44,7 @@ pipeline {
         stage('run combined testing') {
             steps {
                 script {
-                    sh 'python combined_testing.py'
+                    sh 'python3 combined_testing.py'
 
                 }
             }
