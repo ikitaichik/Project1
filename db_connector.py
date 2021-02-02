@@ -6,23 +6,26 @@ config = configparser.ConfigParser()
 config.read('props.ini')
 
 # Establish connection to DB
-conn = pymysql.connect(
-    host=config.get('MySQL Creds', 'HOST'),
-    port=3306,
-    user=config.get('MySQL Creds', 'USER'),
-    passwd=config.get('MySQL Creds', 'PASSWORD'),
-    db=config.get('MySQL Creds', 'DB'),
-    charset='utf8',
-    cursorclass=pymysql.cursors.DictCursor
-)
-
-conn.autocommit(True)
 db_name = config.get('MySQL Creds', 'DB_Name')
+def initConn():
+    conn = pymysql.connect(
+        host=config.get('MySQL Creds', 'HOST'),
+        port=3306,
+        user=config.get('MySQL Creds', 'USER'),
+        passwd=config.get('MySQL Creds', 'PASSWORD'),
+        db=config.get('MySQL Creds', 'DB'),
+        charset='utf8',
+        cursorclass=pymysql.cursors.DictCursor
+    )
+    conn.autocommit(True)
+    return conn
+
 
 
 # Insert data into table
 def insert_user(id, name):
     try:
+        conn=initConn()
         conn.connect()
         cursor = conn.cursor()
 
@@ -40,13 +43,13 @@ def insert_user(id, name):
         cursor.execute(f"INSERT into {db_name} VALUES (%s , %s , %s )", (new_id, name, creation_date))
         print(f"ID was in use, inserted as {new_id} instead")
     finally:
-        cursor.close()
         conn.close()
 
 
 # Updating data inside the table
 def update_user(name, id):
     try:
+        conn = initConn()
         conn.connect()
         cursor = conn.cursor()
 
@@ -54,13 +57,13 @@ def update_user(name, id):
     except:
         print("Error")
     finally:
-        cursor.close()
         conn.close()
 
 
 # Delete user from table
 def delete_user(id):
     try:
+        conn = initConn()
         conn.connect()
         cursor = conn.cursor()
 
@@ -68,13 +71,13 @@ def delete_user(id):
     except:
         print("Error")
     finally:
-        cursor.close()
         conn.close()
 
 
 # get user by user id
 def get_id(id):
     try:
+        conn = initConn()
         conn.connect()
         cursor = conn.cursor()
 
@@ -86,12 +89,12 @@ def get_id(id):
     except:
         print("Error")
     finally:
-        cursor.close()
         conn.close()
 
 
 def get_table():
     try:
+        conn = initConn()
         conn.connect()
         cursor = conn.cursor()
 
@@ -101,12 +104,12 @@ def get_table():
     except:
         print("Error")
     finally:
-        cursor.close()
         conn.close()
 
 
 def get_ids():
     try:
+        conn = initConn()
         conn.connect()
         cursor = conn.cursor()
 
@@ -116,6 +119,5 @@ def get_ids():
     except:
         print("Error")
     finally:
-        cursor.close()
         conn.close()
 
