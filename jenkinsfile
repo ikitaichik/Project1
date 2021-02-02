@@ -12,7 +12,11 @@ pipeline {
         stage('run rest app server ') {
             steps {
                 script {
-                    sh 'print(sys.version); print(sys.executable); print(os.environ["PATH"]); print(os.environ["PYTHONPATH"]); print(os.getcwd()'
+                    sh 'print(sys.version)'
+                    sh 'print(sys.executable)'
+                    sh 'print(os.environ["PATH"])'
+                    sh 'print(os.environ["PYTHONPATH"])'
+                    sh 'print(os.getcwd()'
                     sh 'nohup python web_app.py &'
 
                 }
