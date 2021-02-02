@@ -31,7 +31,7 @@ elif args.test == "backend":
     id = db_connector.get_ids()
     backend_testing.get(id)
 elif args.test == "frontend":
-    if "Itzik" == frontend_testing.frontend_test(id):
+    if "Itzik" == frontend_testing.frontend_test(1):
         print("Test succeeded")
     else:
         raise Exception
