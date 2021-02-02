@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd0541cb-8814-4393-a87d-71d1e7a7a106" name="Default Changelist" comment="Updated #3 - separation of frontend and backend">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend_testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend_testing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/combined_testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/combined_testing.py" afterDir="false" />
-    </list>
+    <list default="true" id="fd0541cb-8814-4393-a87d-71d1e7a7a106" name="Default Changelist" comment="Updated #3 - separation of frontend and backend" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -199,7 +195,7 @@
       <updated>1610877681658</updated>
       <workItem from="1610877696159" duration="11000" />
       <workItem from="1611420095268" duration="8199000" />
-      <workItem from="1611486384699" duration="18273000" />
+      <workItem from="1611486384699" duration="18567000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Jenkinsfile and updating server_stop">
       <created>1612266194794</created>
@@ -257,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612279157475</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Updated #3 - separation of frontend and backend">
+      <created>1612279817979</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1612279817979</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

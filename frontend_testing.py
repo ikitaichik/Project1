@@ -15,7 +15,10 @@ def frontend_test(id):
 
 
 if __name__ == '__main__':
-    if "Itzik" == frontend_test(1):
-        print("Test succeeded")
-    else:
-        print("Test Failed")
+    try:
+        if "Itzik" == frontend_test(1):
+            print("Test succeeded")
+        else:
+            raise Exception
+    except:
+        print("Test failed")

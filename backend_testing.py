@@ -34,14 +34,9 @@ def delete(id):
 
 
 if __name__ == '__main__':
-    post(3, "Posted user1")
-    get(3)
-    delete(3)
-
-
-
-
-
-
-
-
+    try:
+        post(3, "Posted user1")
+        get(3)
+        delete(3)
+    except:
+        print("Test failed")
