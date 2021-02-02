@@ -12,6 +12,7 @@ pipeline {
         stage('run rest app server ') {
             steps {
                 script {
+                    sh 'pip install --upgrade pip'
                     sh 'sudo python3.9 -m pip selenium'
                     sh 'nohup python web_app.py &'
 
