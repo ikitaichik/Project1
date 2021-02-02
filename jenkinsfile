@@ -6,7 +6,7 @@ pipeline {
                 script {
                     properties([pipelineTriggers([pollSCM('*/30 * * * *')])])
                 }
-                git 'https://github.com/keidar/Project2.git'
+                git 'https://github.com/ikitaichik/Project1.git'
             }
         }
         stage('run rest app server ') {
