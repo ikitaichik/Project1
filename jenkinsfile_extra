@@ -1,0 +1,56 @@
+pipeline {
+    agent any
+    parameters {
+        choice(name: 'test_choice', choices: ['3', '2', '1'], description: '1 - Frontend \n 2 - Backend \n 3 - Combined') }
+    stages {
+        stage('Pull Code') {
+            steps {
+                git 'https://github.com/ikitaichik/Project1.git'
+            }
+        }
+        stage('run rest app server ') {
+            steps {
+                script {
+                    sh 'nohup python3 rest_app.py &'
+
+                }
+            }
+        }
+        stage('run web app server') {
+            steps {
+                script {
+                    sh 'nohup python3 web_app.py &'
+
+                }
+            }
+        }
+
+        stage('Choice') {
+            steps {
+                script {
+                    if (params.test_choice == '1')
+                    {
+                        sh 'python3 frontend_testing.py'
+                    }
+                    else if (params.test_choice == '2')
+                    {
+                        sh 'python3 backend_testing.py'
+                    }
+                    else
+                    {
+                        sh 'python3 combined_testing.py'
+                   }
+                }
+            }
+        }
+
+        stage('run clean environment ') {
+            steps {
+                script {
+                    sh ' python3 clean_environment.py'
+
+                }
+            }
+        }
+    }
+}
