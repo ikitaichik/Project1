@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd0541cb-8814-4393-a87d-71d1e7a7a106" name="Default Changelist" comment="Updated #3 - separation of frontend and backend">
-      <change afterPath="$PROJECT_DIR$/jenkinsfile_extra" afterDir="false" />
+    <list default="true" id="fd0541cb-8814-4393-a87d-71d1e7a7a106" name="Default Changelist" comment="Updated #4 - Extra">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/jenkinsfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,7 +242,7 @@
       <updated>1610877681658</updated>
       <workItem from="1610877696159" duration="11000" />
       <workItem from="1611420095268" duration="8199000" />
-      <workItem from="1611486384699" duration="21677000" />
+      <workItem from="1611486384699" duration="22435000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Jenkinsfile and updating server_stop">
       <created>1612266194794</created>
@@ -314,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612280185281</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Updated #4 - Extra">
+      <created>1612430226622</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1612430226622</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,7 +354,8 @@
     <MESSAGE value="Adding Jenkinsfile and updating server_stop" />
     <MESSAGE value="Updated #2 - try/except on clean_environment.py" />
     <MESSAGE value="Updated #3 - separation of frontend and backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated #3 - separation of frontend and backend" />
+    <MESSAGE value="Updated #4 - Extra" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated #4 - Extra" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
