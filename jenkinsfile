@@ -1,5 +1,13 @@
 pipeline {
     agent any
+    environment {
+        registry = "ikitaichik/devops_course"
+        registryCredential = 'docker_hub'
+        dockerImage = ''
+        }
+    options {
+        buildDiscarder(logRotator(numToKeepStr: '20', daysToKeepStr: '5' ))
+    }
     stages {
         stage('Pull Code') {
             steps {
